@@ -1,0 +1,335 @@
+===============================================
+SUMMARY
+===============================================
+Total changes found: 579
+Files that would be modified: 324
+
+Files and Versions Found:
++----------------------------------------------------------------------------------+------------------+-------------------+
+| File                                                                             | Curr Ver(s)      | Target Ver        |
++----------------------------------------------------------------------------------+------------------+-------------------+
+| Bitfinex.Net\Bitfinex.Net.csproj                                                 | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| CryptoExchange.Net\CryptoExchange.Net.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| Fortress.Bloomberg.PerSecurityWS\Fortress.Bloomberg.PerSecurityWS.csproj         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| LayerOne.Bloomberg\LayerOne.Bloomberg.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| LayerOne.MarketDataStaging.Common\LayerOne.MarketDataStaging.Common.csproj       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| OldCore\Fortress.Common\Fortress.Common.csproj                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| OldCore\P1TC.Common.Test\P1TC.Testing.Common.csproj                              | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| OldCore\P1TC.Common\P1TC.Common.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| OldCore\POne.Contracts\POne.Contracts.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| P1TC.TagTransposition\POne.TagTransposition.csproj                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.AlertModule.Tests\POne.AlertModule.Tests.csproj                             | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Alerts\POne.Alerts.csproj                                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.AlertsApiClient\POne.AlertsApiClient.csproj                                 | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST.Tests\POne.AlertsREST.Tests.csproj                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\ALERTING.config                               | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL001.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL001-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL002.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL003.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL003-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL004.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL005.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL006.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL007.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL007-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL008.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL009.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL010.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL011.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL012.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL013.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL014.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL014-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL015.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL016.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL017.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL017-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL018.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL019.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL020.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL021.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL021-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL022.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL022-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL023.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL024.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL024-QA.config                               | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL024-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL025.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL025-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL026.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL027.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL028.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL029.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL030.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL031.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL031-UAT.config                              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL032.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL033.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL034.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL035.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL036.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL037.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL038.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL039.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL040.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL041.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL042.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL043.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL044.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL045.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL046.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL047.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL048.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL049.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL050.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL051.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL052.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL053.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CL054.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\CONVEX-TEST.config                            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEMO1.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEMO2.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV1.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV1-INST2.config                             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV2.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV2-INST2.config                             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV3.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV3-INST2.config                             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\DEV4-INST2.config                             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\FORTRESSNEW.config                            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\FORTRESSNEW-DEV.config                        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\FORTRESSNEW-UAT.config                        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\GCM.config                                    | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\GCM-FIX.config                                | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\GSM.config                                    | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\GSM-DEV-INST2.config                          | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\PROTO.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\.Deploy\AlertsREST\QA.config                                     | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.AlertsREST\POne.AlertsREST.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Business\POne.Business.csproj                                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Camra\POne.Camra.csproj                                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Core\POne.Core.csproj                                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Crypto.GSM\POne.Crypto.GSM.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.DataAccess\POne.DataAccess.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST.Tests\POne.DataVisualizationREST.Tests.csproj         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\ALERTING.config         | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL001.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL001-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL002.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL003.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL003-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL004.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL005.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL006.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL007.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL007-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL008.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL009.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL010.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL011.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL012.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL012-MIG.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL013.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL014.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL014-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL015.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL016.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL017.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL017-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL018.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL019.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL020.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL021.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL021-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL022.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL022-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL023.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL024.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL024-QA.config         | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL024-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL025.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL025-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL026.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL027.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL028.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL029.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL030.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL031.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL031-UAT.config        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL032.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL033.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL034.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL035.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL036.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL037.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL038.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL039.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL040.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL041.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL042.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL043.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL044.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL045.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL046.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL047.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL048.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL049.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL050.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL051.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL052.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL053.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CL054.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\CONVEX-TEST.config      | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEMO1.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEMO2.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV1.config             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV1-INST2.config       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV2.config             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV2-INST2.config       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV3.config             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV3-INST2.config       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\DEV4-INST2.config       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\FORTRESSNEW.config      | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\FORTRESSNEW-DEV.config  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\FORTRESSNEW-UAT.config  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\GCM.config              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\GCM-FIX.config          | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\GSM.config              | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\GSM-DEV-INST2.config    | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\PROTO.config            | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\.Deploy\DataVisualizationREST\QA.config               | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.DataVisualizationREST\POne.DataVisualizationREST.csproj                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Gateway.Fix\POne.Gateway.Fix.csproj                                         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Gateway.Tests\POne.Gateway.Tests.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Gateway\POne.Gateway.csproj                                                 | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.GridExporter.Tests\POne.GridExporter.Tests.csproj                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.GridExporter\POne.GridExporter.csproj                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.GsmFacade.Tests\POne.GsmFacade.Tests.csproj                                 | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.GsmFacade\POne.GsmFacade.csproj                                             | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.GsmFacadePql\POne.GsmFacadePql.csproj                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.GsmSyncTool\POne.GsmSyncTool.csproj                                         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.InstrumentAnalytics\POne.InstrumentAnalytics.csproj                         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Integration.Shell\POne.Integration.Shell.csproj                             | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.JwtGenerator\POne.JwtGenerator.csproj                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Kernel.Tests\POne.Kernel.Tests.csproj                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Kernel\POne.Kernel.csproj                                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.MarketFactory.Services\POne.MarketFactory.csproj                            | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Misys\POne.Misys.csproj                                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.OldCore.Tests\POne.OldCore.Tests.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Operations\POne.Operations.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.P1Live.Contracts\POne.P1Live.Contracts.csproj                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.P1Live.Service\POne.P1Live.Service.csproj                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.P1Live\POne.P1Live.csproj                                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.REST.Common\POne.REST.Common.csproj                                         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Rest.Tests\POne.Rest.Tests.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL001.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL001-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL002.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL003.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL004.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL005.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL006.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL007.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL007-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL008.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL009.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL010.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL011.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL012.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL012-MIG.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL013.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL014.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL014-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL015.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL016.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL017.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL017-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL018.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL019.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL020.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL021.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL021-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL022.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL022-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL023.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL024.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL024-QA.config                                    | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL024-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL025.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL025-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL026.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL027.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL028.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL029.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL030.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL031.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL031-UAT.config                                   | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL032.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL033.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL034.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL035.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL036.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL037.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL038.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL039.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL040.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL041.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL042.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL043.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL044.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL045.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL046.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL047.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL048.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL049.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL050.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL051.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL052.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL053.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CL054.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\CONVEX-TEST.config                                 | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEMO1.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEMO2.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV1.config                                        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV1-INST2.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV2.config                                        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV2-INST2.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV3.config                                        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV3-INST2.config                                  | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\DEV4.config                                        | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\FORTRESSNEW.config                                 | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\FORTRESSNEW-DEV.config                             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\FORTRESSNEW-UAT.config                             | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\GCM.config                                         | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\GSM.config                                         | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\GSM-DEV-INST2.config                               | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\PROTO.config                                       | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\.Deploy\RestApiREST\QA.config                                          | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| POne.Rest\POne.Rest.csproj                                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.RestrictionTransporter.Tests\POne.RestrictionTransporter.Tests.csproj       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.RestrictionTransporter\POne.RestrictionTransporter.csproj                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Risk\POne.Risk.csproj                                                       | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.RuleEngine.Tests\POne.RuleEngine.Tests.csproj                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.SecurityMaster\POne.SecurityMaster.Common\POne.SecurityMaster.Common.csproj | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.ServiceModel.Configuration\POne.ServiceModel.Configuration.csproj           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.ServiceModel.Tests\POne.ServiceModel.Tests.csproj                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Stp.Gatweay.Rest\POne.Stp.Gatweay.Rest.csproj                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.StpFeedCommon\POne.StpFeedCommon.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.STPTransporter\POne.STPTransporter.csproj                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.StreamingPortfolio\POne.StreamingPortfolio.csproj                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Synchro\POne.Synchro.csproj                                                 | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.TaggingNotificationListener\POne.TaggingNotificationListener.csproj         | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.TagValueUpdate\POne.TagValueUpdate.csproj                                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Tests\POne.Tests.csproj                                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.TickingComplianceCache\POne.TickingComplianceCache.csproj                   | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.TickingPortfolio\POne.TickingPortfolio.csproj                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Trestle\POne.Trestle.csproj                                                 | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| POne.Workflow\POne.Workflow.csproj                                               | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| PositionService\PositionService.csproj                                           | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| PositionServiceLib\PositionServiceLib.csproj                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| RuleEngine\Fortress.Service.exe.config                                           | 13.0.0.0         | 13.0.4 (13.0.4.0) |
+| RuleEngine\RuleEngine.csproj                                                     | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
+| RuleEngineTest\RuleEngineTest\RuleEngineTest.csproj                              | 13.0.4, 13.0.0.0 | 13.0.4 (13.0.4.0) |
++----------------------------------------------------------------------------------+------------------+-------------------+
