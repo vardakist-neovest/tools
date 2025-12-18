@@ -142,7 +142,7 @@ $raw = Get-Content -LiteralPath $envConfig.FullName -Raw
 $hostname = "$Environment.layeronesoftware.com"
 $transformed = $raw -replace 'localhost', $hostname
 # Replace any drive letter root (A:\ .. Z:\) with D:\
-$transformed = [Regex]::Replace($transformed, '(?i)\b[A-Z]:\\', 'D:\\')
+$transformed = [Regex]::Replace($transformed, '(?i)\b[A-Z]:\\', 'D:\')
 
 # --- DryRun Preview ---
 if($DryRun){
@@ -162,13 +162,8 @@ if($DryRun){
     }
 }
 
-# --- Backup & Write ---
-$timestamp = Get-Date -Format 'yyyyMMdd_HHmmss'
-# $backupPath = "$($targetConfig.FullName).bak.$timestamp"
-# Copy-Item -LiteralPath $targetConfig.FullName -Destination $backupPath -Force
-# Set-Content -LiteralPath $targetConfig.FullName -Value $transformed -Encoding UTF8
-
-# Write-Host "Backup created: $backupPath" -ForegroundColor DarkGray
+# --- Write ---
+Set-Content -LiteralPath $targetConfig.FullName -Value $transformed -Encoding UTF8
 Write-Host "Updated config written to: $($targetConfig.FullName)" -ForegroundColor Green
 Write-Host "Hostname substitution: localhost -> $hostname" -ForegroundColor Green
 Write-Host "Drive letters normalized to D:\" -ForegroundColor Green
@@ -226,7 +221,7 @@ if($configNode){
 Write-Verbose "Updating project debug settings in .csproj.user file"
 
 # Define the external program path
-$externalExePath = "D:\Users\uvardth\source\repos\$RepoRoot\P1TC.Core\.Build\Debug\Fortress.Service.exe"
+$externalExePath = "$WorkspaceRoot\P1TC.Core\.Build\Debug\Fortress.Service.exe"
 
 # Load or create .csproj.user file
 $csprojUserPath = "$($csproj.FullName).user"
@@ -429,6 +424,5 @@ return [PSCustomObject]@{
     Hostname       = $hostname
     EnvConfigPath  = $envConfig.FullName
     TargetConfig   = $targetConfig.FullName
-    # BackupPath     = $backupPath
     DryRun         = $false
 }
